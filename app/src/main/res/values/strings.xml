@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PasitoAPPasito</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hola">Hola !</string>
+    <string name="bienvenido">Bienvenido/a,</string>
+    <string name="nombrePregunta">¿Cómo te llamas?</string>
+    <string name="ingresaNombre">Ingresa tu nombre acá</string>
+    <string name="ingresaNombreVacio">Ingresa tu nombre!</string>
+    <string name="ingresaNombreCorto">Ingresa al menos 3 caracteres</string>
+    <string name="continuar">Continuar</string>
+    <string name="inicio">Inicio</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="busqueda">Búsqueda</string>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

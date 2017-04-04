@@ -1,0 +1,1004 @@
+<?xml version="1.0"?>
+<records>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+    <actividad>
+        <id>1</id>
+        <nombre>Vestirse</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Estoy desnudo</texto>
+            <img>1_1.png</img>
+            <sonido>1_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me pongo la ropa interior</texto>
+            <img>1_2.png</img>
+            <sonido>1_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me pongo los calcetines</texto>
+            <img>1_3.png</img>
+            <sonido>1_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Me pongo el pantalón</texto>
+            <img>1_4.png</img>
+            <sonido>1_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Me pongo la camisa</texto>
+            <img>1_5.png</img>
+            <sonido>1_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me abrocho los botones</texto>
+            <img>1_6.png</img>
+            <sonido>1_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Me pongo los zapatos</texto>
+            <img>1_7.png</img>
+            <sonido>1_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me pongo el abrigo</texto>
+            <img>1_8.png</img>
+            <sonido>1_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Ya estoy listo</texto>
+            <img>1_9.png</img>
+            <sonido>1_9.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>2</id>
+        <nombre>Lavarse los dientes</nombre>
+        <paso>
+            <id>1</id>
+            <texto>Tomar el cepillo de dientes</texto>
+            <img>2_1.png</img>
+            <sonido>2_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Coloco la pasta de dientes, y me cepillo los dientes</texto>
+            <img>2_2.png</img>
+            <sonido>2_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me enjuago la boca</texto>
+            <img>2_3.png</img>
+            <sonido>2_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Escupo el agua</texto>
+            <img>2_4.png</img>
+            <sonido>2_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Abro el grifo y limpio</texto>
+            <img>2_5.png</img>
+            <sonido>2_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me lavo las manos</texto>
+            <img>2_6.png</img>
+            <sonido>2_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Cierro el grifo</texto>
+            <img>2_7.png</img>
+            <sonido>2_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me seco las manos y la boca</texto>
+            <img>2_8.png</img>
+            <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+
+
+</records>
