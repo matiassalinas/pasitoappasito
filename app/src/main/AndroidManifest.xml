@@ -19,6 +19,10 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" />
+        <activity
+            android:name=".PasosActivity"
+            android:label="@string/title_activity_pasos"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

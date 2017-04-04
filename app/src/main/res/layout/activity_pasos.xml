@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="io.github.matiassalinas.pasitoappasito.PasosActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="5dp"
+            android:layout_weight="6"
+            android:background="@color/colorSecondary"
+            android:fontFamily="casual"
+            android:text="@string/volver"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:background="@color/colorPrimary"
+            android:fontFamily="casual"
+            android:text="@string/continuar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -3,6 +3,7 @@ package io.github.matiassalinas.pasitoappasito;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.ContextCompat;
@@ -25,6 +26,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -79,7 +81,7 @@ public class HomeActivity extends AppCompatActivity {
             name = storage.getString("NOMBRE");
             TextView txtNombre = (TextView) findViewById(R.id.txtNombre);
             Log.d("NOMBRE",name);
-            txtNombre.setText("Hola, " + name);
+            txtNombre.setText(getString(R.string.hola2) + " " + name);
 
         }
     }
@@ -94,7 +96,12 @@ public class HomeActivity extends AppCompatActivity {
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Toast.makeText(getApplicationContext(),items.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),items.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+
+                    Intent mIntent = new Intent(HomeActivity.this, PasosActivity.class);
+                    Log.d("Actividad",items.get(position).toString());
+                    mIntent.putExtra("actividad", items.get(position));
+                    startActivity(mIntent);
                 }
             });
 
