@@ -96,11 +96,12 @@ public class HomeActivity extends AppCompatActivity {
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    //Toast.makeText(getApplicationContext(),items.get(position).getNombre(), Toast.LENGTH_SHORT).show();
-
+                    Log.d("size pasos", String.valueOf(items.get(position).getPasos().size()));
+                    Toast.makeText(getApplicationContext(),String.valueOf(items.get(position).getPasos().size()), Toast.LENGTH_SHORT).show();
                     Intent mIntent = new Intent(HomeActivity.this, PasosActivity.class);
                     Log.d("Actividad",items.get(position).toString());
                     mIntent.putExtra("actividad", items.get(position));
+                    mIntent.putExtra("pasos", items.get(position).getPasos());
                     startActivity(mIntent);
                 }
             });
@@ -147,21 +148,25 @@ public class HomeActivity extends AppCompatActivity {
                     Element element2 = (Element) node;
                     ArrayList<Paso> pasos = new ArrayList<>();
                     NodeList nList2 = element2.getElementsByTagName("paso");
+                    //Log.d("PASOS", String.valueOf(nList2.getLength()));
                     for(int j=0;j<nList2.getLength();j++){
                         Node node2 = nList2.item(j);
                         if(node2.getNodeType() == Node.ELEMENT_NODE){
-                            Element element3 = (Element) node;
+                            Element element3 = (Element) node2;
                             Paso paso = new Paso(Integer.parseInt(getValue("id",element3)),
                                                 getValue("texto",element3),
                                                 getValue("img",element3),
                                                 getValue("sonido",element3));
                             pasos.add(paso);
+                            //Log.d("TEXTO",getValue("texto",element3));
                         }
                     }
+
                     Actividad act = new Actividad(Integer.parseInt(getValue("id",element2)),
                                                 getValue("nombre",element2),
                                                 pasos);
                     items.add(act);
+
                 }
 
             }

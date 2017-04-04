@@ -1,7 +1,6 @@
 package io.github.matiassalinas.pasitoappasito;
 
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,12 +9,12 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class PasosActivity extends AppCompatActivity {
 
@@ -24,6 +23,8 @@ public class PasosActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
     private Actividad actividad;
+
+    public static ArrayList<Paso> pasos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +40,15 @@ public class PasosActivity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         actividad = getIntent().getExtras().getParcelable("actividad");
-        Log.d("actividad",actividad.getNombre());
+        pasos = (ArrayList<Paso>) getIntent().getSerializableExtra("pasos");
+
+        Log.d("PASOS", String.valueOf(pasos.size()));
+        //Log.d("actividad", String.valueOf(actividad.getPasos().size()));
+
+        for(int i=0;i<pasos.size();i++){
+            Log.d("Paso",pasos.get(i).getTexto());
+        }
+
 
     }
 
@@ -75,7 +84,7 @@ public class PasosActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_pasos, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.txtPaso);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            textView.setText(pasos.get(getArguments().getInt(ARG_SECTION_NUMBER)-1).getTexto());
             return rootView;
         }
     }
@@ -100,7 +109,8 @@ public class PasosActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            Log.d("TAMAÑOOO", actividad.getNombre());
+            return 9;
         }
 
         @Override

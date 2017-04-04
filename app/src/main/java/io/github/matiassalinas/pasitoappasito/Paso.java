@@ -1,10 +1,12 @@
 package io.github.matiassalinas.pasitoappasito;
 
+import java.io.Serializable;
+
 /**
  * Created by matias on 31-03-17.
  */
 
-public class Paso {
+public class Paso implements Serializable {
     private int id;
     private String texto;
     private String imagen;
