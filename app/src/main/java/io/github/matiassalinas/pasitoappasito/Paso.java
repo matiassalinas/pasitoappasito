@@ -1,5 +1,10 @@
 package io.github.matiassalinas.pasitoappasito;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
 
 /**
@@ -35,8 +40,12 @@ public class Paso implements Serializable {
         this.texto = texto;
     }
 
-    public String getImagen() {
-        return imagen;
+    public Drawable getImagen(Context context) throws IOException {
+        InputStream inputstream= null;
+        String img = "images/"+imagen;
+        inputstream = context.getAssets().open(img);
+        Drawable drawable = Drawable.createFromStream(inputstream, null);
+        return drawable;
     }
 
     public void setImagen(String imagen) {

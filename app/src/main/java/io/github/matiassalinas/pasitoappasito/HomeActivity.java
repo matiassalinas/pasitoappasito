@@ -88,7 +88,6 @@ public class HomeActivity extends AppCompatActivity {
 
     protected void setList(){
         gridView = (GridView) findViewById(R.id.gridViewAct);
-        SearchView search = (SearchView) findViewById(R.id.searchView1);
         if(getList("actividades.xml")){
             Log.d("ACTIVIDADESXML","EXISTE");
             adapter = new Adapter(this,items);
@@ -96,26 +95,12 @@ public class HomeActivity extends AppCompatActivity {
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Log.d("size pasos", String.valueOf(items.get(position).getPasos().size()));
-                    Toast.makeText(getApplicationContext(),String.valueOf(items.get(position).getPasos().size()), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),String.valueOf(items.get(position).getPasos().size()), Toast.LENGTH_SHORT).show();
                     Intent mIntent = new Intent(HomeActivity.this, PasosActivity.class);
-                    Log.d("Actividad",items.get(position).toString());
-                    mIntent.putExtra("actividad", items.get(position));
-                    mIntent.putExtra("pasos", items.get(position).getPasos());
+                    //mIntent.putExtra("actividad", items.get(position));
+                    //mIntent.putExtra("pasos", items.get(position).getPasos());
+                    mIntent.putExtra("ID",items.get(position).getId());
                     startActivity(mIntent);
-                }
-            });
-
-            search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-                @Override
-                public boolean onQueryTextSubmit(String query) {
-                    return false;
-                }
-
-                @Override
-                public boolean onQueryTextChange(String newText) {
-                    adapter.filter(newText);
-                    return false;
                 }
             });
 
@@ -146,6 +131,7 @@ public class HomeActivity extends AppCompatActivity {
                 Node node = nList.item(i);
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element element2 = (Element) node;
+                    /*
                     ArrayList<Paso> pasos = new ArrayList<>();
                     NodeList nList2 = element2.getElementsByTagName("paso");
                     //Log.d("PASOS", String.valueOf(nList2.getLength()));
@@ -161,10 +147,10 @@ public class HomeActivity extends AppCompatActivity {
                             //Log.d("TEXTO",getValue("texto",element3));
                         }
                     }
-
+                    */
                     Actividad act = new Actividad(Integer.parseInt(getValue("id",element2)),
                                                 getValue("nombre",element2),
-                                                pasos);
+                                                getValue("img",element2));
                     items.add(act);
 
                 }

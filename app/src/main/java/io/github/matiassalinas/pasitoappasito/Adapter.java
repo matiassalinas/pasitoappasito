@@ -58,7 +58,7 @@ public class Adapter extends BaseAdapter {
         InputStream inputstream= null;
         try {
             inputstream = context.getAssets().open("images/"
-                    +actividad.get(position).getPrincipalImage());
+                    +actividad.get(position).getImg());
             Drawable drawable = Drawable.createFromStream(inputstream, null);
             img.setImageDrawable(drawable);
         } catch (IOException e) {

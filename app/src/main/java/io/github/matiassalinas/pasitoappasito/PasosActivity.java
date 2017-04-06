@@ -1,5 +1,6 @@
 package io.github.matiassalinas.pasitoappasito;
 
+
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.Fragment;
@@ -12,9 +13,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 public class PasosActivity extends AppCompatActivity {
 
@@ -22,15 +35,25 @@ public class PasosActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
-    private Actividad actividad;
+    private int idActividad;
 
-    public static ArrayList<Paso> pasos;
+    private static ArrayList<Paso> pasos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pasos);
 
+        idActividad = (int) getIntent().getExtras().get("ID");
+        if(getPasos("actividades.xml")){
+            Log.d("OK","OKK "+ pasos.size());
+            for(int i=0;i<pasos.size();i++){
+                Log.d("Paso",pasos.get(i).getTexto());
+            }
+        }
+
+        Log.d("PASOS", String.valueOf(pasos.size()));
+        //Log.d("actividad", String.valueOf(actividad.getPasos().size()));
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -39,19 +62,62 @@ public class PasosActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        actividad = getIntent().getExtras().getParcelable("actividad");
-        pasos = (ArrayList<Paso>) getIntent().getSerializableExtra("pasos");
 
-        Log.d("PASOS", String.valueOf(pasos.size()));
-        //Log.d("actividad", String.valueOf(actividad.getPasos().size()));
 
-        for(int i=0;i<pasos.size();i++){
-            Log.d("Paso",pasos.get(i).getTexto());
-        }
 
 
     }
 
+    public boolean getPasos(String xml){
+        try {
+            pasos = new ArrayList<>();
+            InputStream is = getAssets().open(xml);
+
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(is);
+
+            Element element=doc.getDocumentElement();
+            element.normalize();
+
+            NodeList nList = doc.getElementsByTagName("actividad");
+            if(nList.getLength()==0) return false;
+            for (int i=0; i<nList.getLength(); i++) {
+                Node node = nList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element2 = (Element) node;
+                    if(Integer.parseInt(getValue("id",element2)) == idActividad){
+                        NodeList nList2 = element2.getElementsByTagName("paso");
+                        //Log.d("PASOS", String.valueOf(nList2.getLength()));
+                        for(int j=0;j<nList2.getLength();j++){
+                            Node node2 = nList2.item(j);
+                            if(node2.getNodeType() == Node.ELEMENT_NODE){
+                                Element element3 = (Element) node2;
+                                Paso paso = new Paso(Integer.parseInt(getValue("id",element3)),
+                                        getValue("texto",element3),
+                                        getValue("img",element3),
+                                        getValue("sonido",element3));
+                                pasos.add(paso);
+                                //Log.d("TEXTO",getValue("texto",element3));
+                            }
+                        }
+                        return true;
+                    }
+
+                }
+
+            }
+
+            return false;
+
+        } catch (Exception e) {e.printStackTrace(); return false;}
+    }
+
+    private static String getValue(String tag, Element element) {
+        NodeList nodeList = element.getElementsByTagName(tag).item(0).getChildNodes();
+        Node node = nodeList.item(0);
+        return node.getNodeValue();
+    }
 
 
     /**
@@ -85,6 +151,13 @@ public class PasosActivity extends AppCompatActivity {
             View rootView = inflater.inflate(R.layout.fragment_pasos, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.txtPaso);
             textView.setText(pasos.get(getArguments().getInt(ARG_SECTION_NUMBER)-1).getTexto());
+            ImageView imgView = (ImageView) rootView.findViewById(R.id.imgPaso);
+            try {
+                imgView.setImageDrawable(pasos.get(getArguments().getInt(ARG_SECTION_NUMBER)-1).getImagen(this.getContext()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             return rootView;
         }
     }
@@ -93,7 +166,7 @@ public class PasosActivity extends AppCompatActivity {
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+    public static class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -108,9 +181,7 @@ public class PasosActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            Log.d("TAMAÑOOO", actividad.getNombre());
-            return 9;
+            return pasos.size();
         }
 
         @Override
