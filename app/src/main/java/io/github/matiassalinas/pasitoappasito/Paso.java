@@ -1,7 +1,9 @@
 package io.github.matiassalinas.pasitoappasito;
 
 import android.content.Context;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,8 +54,11 @@ public class Paso implements Serializable {
         this.imagen = imagen;
     }
 
-    public String getSonido() {
-        return sonido;
+    public AssetFileDescriptor getSonido(Context context) throws IOException {
+        String snd = "sounds/"+sonido;
+        Log.d("SONIDO: ",snd);
+        AssetFileDescriptor sound = context.getAssets().openFd(snd);
+        return sound;
     }
 
     public void setSonido(String sonido) {

@@ -1,6 +1,9 @@
 package io.github.matiassalinas.pasitoappasito;
 
 
+import android.content.Context;
+import android.content.res.AssetFileDescriptor;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.Fragment;
@@ -39,11 +42,13 @@ public class PasosActivity extends AppCompatActivity {
 
     private static ArrayList<Paso> pasos;
 
+    private static boolean firstPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pasos);
-
+        firstPage = false;
         idActividad = (int) getIntent().getExtras().get("ID");
         if(getPasos("actividades.xml")){
             Log.d("OK","OKK "+ pasos.size());
@@ -61,6 +66,14 @@ public class PasosActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                setSound(position,getBaseContext());
+            }
+        });
+
 
 
 
@@ -119,6 +132,18 @@ public class PasosActivity extends AppCompatActivity {
         return node.getNodeValue();
     }
 
+    public static void setSound(int pos, Context context){
+        MediaPlayer player = new MediaPlayer();
+        try {
+            AssetFileDescriptor afd = pasos.get(pos).getSonido(context);
+            Log.d("POS", String.valueOf(pos));
+            player.setDataSource(afd.getFileDescriptor(),afd.getStartOffset(),afd.getLength());
+            player.prepare();
+            player.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * A placeholder fragment containing a simple view.
@@ -150,17 +175,37 @@ public class PasosActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_pasos, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.txtPaso);
-            textView.setText(pasos.get(getArguments().getInt(ARG_SECTION_NUMBER)-1).getTexto());
+            int pos = getArguments().getInt(ARG_SECTION_NUMBER)-1;
+            textView.setText(pasos.get(pos).getTexto());
             ImageView imgView = (ImageView) rootView.findViewById(R.id.imgPaso);
             try {
-                imgView.setImageDrawable(pasos.get(getArguments().getInt(ARG_SECTION_NUMBER)-1).getImagen(this.getContext()));
+                imgView.setImageDrawable(pasos.get(pos).getImagen(this.getContext()));
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
+            if(!firstPage){
+                firstPage = true;
+                setSound(pos,this.getContext());
+            }
+
             return rootView;
         }
+
+        @Override
+        public void setUserVisibleHint(boolean isVisibleToUser) {
+            super.setUserVisibleHint(isVisibleToUser);
+            if (isVisibleToUser) {
+                Log.d("HOLAA","HOLAA");
+            }
+            else {
+            }
+        }
     }
+
+
+
+
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -176,6 +221,7 @@ public class PasosActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+
             return PlaceholderFragment.newInstance(position + 1);
         }
 

@@ -63,7 +63,7 @@
     <actividad>
         <id>2</id>
         <nombre>Lavarse los dientes</nombre>
-        <img>1_8.png</img>
+        <img>2_8.png</img>
         <paso>
             <id>1</id>
             <texto>Tomar el cepillo de dientes</texto>
