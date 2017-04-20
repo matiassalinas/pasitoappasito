@@ -26,17 +26,6 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/soundButton"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,8 +36,14 @@
                 android:id="@+id/txtPaso"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:textAlignment="center" />
+                android:fontFamily="casual"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28dp"
+                tools:text="Texto" />
         </LinearLayout>
 
     </LinearLayout>

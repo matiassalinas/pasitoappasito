@@ -16,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,6 +46,8 @@ public class PasosActivity extends AppCompatActivity {
 
     private static boolean firstPage;
 
+    private int posActual;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,10 +73,22 @@ public class PasosActivity extends AppCompatActivity {
 
         mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
-            public void onPageSelected(int position) {
+            public void onPageSelected(final int position) {
+                posActual = position;
                 setSound(position,getBaseContext());
             }
         });
+        posActual = 0;
+        ImageButton soundButton = (ImageButton) findViewById(R.id.soundButton);
+        soundButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("CLIIICK","CLIIICK");
+                setSound(posActual,getBaseContext());
+            }
+        });
+
+
 
 
 
