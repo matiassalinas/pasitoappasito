@@ -48,6 +48,8 @@ public class PasosActivity extends AppCompatActivity {
 
     private int posActual;
 
+    private static MediaPlayer player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,7 +151,12 @@ public class PasosActivity extends AppCompatActivity {
     }
 
     public static void setSound(int pos, Context context){
-        MediaPlayer player = new MediaPlayer();
+        Log.d("PLAYERSOUND", String.valueOf(player));
+        if(player!=null){
+            player.release();
+            player = null;
+        }
+        player = new MediaPlayer();
         try {
             AssetFileDescriptor afd = pasos.get(pos).getSonido(context);
             Log.d("POS", String.valueOf(pos));
