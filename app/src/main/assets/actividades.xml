@@ -3,7 +3,7 @@
     <actividad>
         <id>1</id>
         <nombre>Vestirse</nombre>
-        <img>1_9.png</img>
+        <img>1_0.png</img>
         <paso>
             <id>1</id>
             <texto>Estoy desnudo</texto>
@@ -63,7 +63,7 @@
     <actividad>
         <id>2</id>
         <nombre>Lavarse los dientes</nombre>
-        <img>2_8.png</img>
+        <img>2_0.png</img>
         <paso>
             <id>1</id>
             <texto>Tomar el cepillo de dientes</texto>
@@ -111,6 +111,210 @@
             <texto>Me seco las manos y la boca</texto>
             <img>2_8.png</img>
             <sonido>2_8.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>3</id>
+        <nombre>Voy al baño</nombre>
+        <img>3_0.png</img>
+        <paso>
+            <id>1</id>
+            <texto>Me bajo el pantalón</texto>
+            <img>3_1.png</img>
+            <sonido>3_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me bajo la ropa interior</texto>
+            <img>3_2.png</img>
+            <sonido>3_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Me siento en el water</texto>
+            <img>3_3.png</img>
+            <sonido>3_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Hago caca</texto>
+            <img>3_4.png</img>
+            <sonido>3_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Cojo papel</texto>
+            <img>3_5.png</img>
+            <sonido>3_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Me limpio el culo</texto>
+            <img>3_6.png</img>
+            <sonido>3_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Tiro el papel</texto>
+            <img>3_7.png</img>
+            <sonido>3_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Me subo la ropa interior</texto>
+            <img>3_8.png</img>
+            <sonido>3_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Me subo el pantalón</texto>
+            <img>3_9.png</img>
+            <sonido>3_9.mp3</sonido>
+        </paso>
+        <paso>
+            <id>10</id>
+            <texto>Bajo la tapa</texto>
+            <img>3_10.png</img>
+            <sonido>3_10.mp3</sonido>
+        </paso>
+        <paso>
+            <id>11</id>
+            <texto>Tiro de la cisterna</texto>
+            <img>3_11.png</img>
+            <sonido>3_11.mp3</sonido>
+        </paso>
+        <paso>
+            <id>12</id>
+            <texto>Me lavo las manos</texto>
+            <img>3_12.png</img>
+            <sonido>3_12.mp3</sonido>
+        </paso>
+        <paso>
+            <id>13</id>
+            <texto>Me seco las manos</texto>
+            <img>3_13.png</img>
+            <sonido>3_13.mp3</sonido>
+        </paso>
+    </actividad>
+
+    <actividad>
+        <id>4</id>
+        <nombre>Aprendo a comer</nombre>
+        <img>4_0.png</img>
+        <paso>
+            <id>1</id>
+            <texto>Me lavo las manos</texto>
+            <img>4_1.png</img>
+            <sonido>4_1.mp3</sonido>
+        </paso>
+        <paso>
+            <id>2</id>
+            <texto>Me siento en la silla</texto>
+            <img>4_2.png</img>
+            <sonido>4_2.mp3</sonido>
+        </paso>
+        <paso>
+            <id>3</id>
+            <texto>Sirvo la comida</texto>
+            <img>4_3.png</img>
+            <sonido>4_3.mp3</sonido>
+        </paso>
+        <paso>
+            <id>4</id>
+            <texto>Agarro la cuchara</texto>
+            <img>4_4.png</img>
+            <sonido>4_4.mp3</sonido>
+        </paso>
+        <paso>
+            <id>5</id>
+            <texto>Cojo comida</texto>
+            <img>4_5.png</img>
+            <sonido>4_5.mp3</sonido>
+        </paso>
+        <paso>
+            <id>6</id>
+            <texto>Llevo la cuchara a la boca</texto>
+            <img>4_6.png</img>
+            <sonido>4_6.mp3</sonido>
+        </paso>
+        <paso>
+            <id>7</id>
+            <texto>Trago despacio</texto>
+            <img>4_7.png</img>
+            <sonido>4_7.mp3</sonido>
+        </paso>
+        <paso>
+            <id>8</id>
+            <texto>Agarro el tenedor</texto>
+            <img>4_8.png</img>
+            <sonido>4_8.mp3</sonido>
+        </paso>
+        <paso>
+            <id>9</id>
+            <texto>Agarro el cuchillo</texto>
+            <img>4_9.png</img>
+            <sonido>4_9.mp3</sonido>
+        </paso>
+        <paso>
+            <id>10</id>
+            <texto>Pincho la comida</texto>
+            <img>4_10.png</img>
+            <sonido>4_10.mp3</sonido>
+        </paso>
+        <paso>
+            <id>11</id>
+            <texto>Corto la comida</texto>
+            <img>4_11.png</img>
+            <sonido>4_11.mp3</sonido>
+        </paso>
+        <paso>
+            <id>12</id>
+            <texto>Llevo el tenedor a la boca</texto>
+            <img>4_12.png</img>
+            <sonido>4_12.mp3</sonido>
+        </paso>
+        <paso>
+            <id>13</id>
+            <texto>Mastico despacio</texto>
+            <img>4_13.png</img>
+            <sonido>4_13.mp3</sonido>
+        </paso>
+        <paso>
+            <id>14</id>
+            <texto>Echo agua</texto>
+            <img>4_14.png</img>
+            <sonido>4_14.mp3</sonido>
+        </paso>
+        <paso>
+            <id>15</id>
+            <texto>LLevo el vaso a la boca</texto>
+            <img>4_15.png</img>
+            <sonido>4_15.mp3</sonido>
+        </paso>
+        <paso>
+            <id>16</id>
+            <texto>Bebo agua</texto>
+            <img>4_16.png</img>
+            <sonido>4_16.mp3</sonido>
+        </paso>
+        <paso>
+            <id>17</id>
+            <texto>Me limpio la boca</texto>
+            <img>4_17.png</img>
+            <sonido>4_17.mp3</sonido>
+        </paso>
+         <paso>
+            <id>18</id>
+            <texto>Recojo la mesa</texto>
+            <img>4_18.png</img>
+            <sonido>4_18.mp3</sonido>
+        </paso>
+        <paso>
+            <id>19</id>
+            <texto>Me cepillo los dientes</texto>
+            <img>4_19.png</img>
+            <sonido>4_19.mp3</sonido>
         </paso>
     </actividad>
 

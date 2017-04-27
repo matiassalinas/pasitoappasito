@@ -42,32 +42,11 @@ public class HomeActivity extends AppCompatActivity {
     private static GridView gridView;
     private static Adapter adapter;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            //Intent i = new Intent(HomeActivity.this, HomeActivity.class);
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    //startActivity(i);
-                    return true;
-                case R.id.navigation_favorite:
-                    //startActivity(i);
-                    return true;
-            }
-            return false;
-        }
-
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         getName();
         setList();
