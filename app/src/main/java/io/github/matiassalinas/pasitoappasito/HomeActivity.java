@@ -1,24 +1,13 @@
 package io.github.matiassalinas.pasitoappasito;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -26,7 +15,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.InputStream;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -56,19 +44,15 @@ public class HomeActivity extends AppCompatActivity {
     protected void getName(){
         storage = getIntent().getExtras();
         if(storage!=null){
-
             name = storage.getString("NOMBRE");
             TextView txtNombre = (TextView) findViewById(R.id.txtNombre);
-            Log.d("NOMBRE",name);
             txtNombre.setText(getString(R.string.hola2) + " " + name);
-
         }
     }
 
     protected void setList(){
         gridView = (GridView) findViewById(R.id.gridViewAct);
         if(getList("actividades.xml")){
-            Log.d("ACTIVIDADESXML","EXISTE");
             adapter = new Adapter(this,items);
             gridView.setAdapter(adapter);
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -76,9 +60,8 @@ public class HomeActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     //Toast.makeText(getApplicationContext(),String.valueOf(items.get(position).getPasos().size()), Toast.LENGTH_SHORT).show();
                     Intent mIntent = new Intent(HomeActivity.this, PasosActivity.class);
-                    //mIntent.putExtra("actividad", items.get(position));
-                    //mIntent.putExtra("pasos", items.get(position).getPasos());
                     mIntent.putExtra("ID",items.get(position).getId());
+                    mIntent.putExtra("Nombre",items.get(position).getNombre());
                     startActivity(mIntent);
                 }
             });

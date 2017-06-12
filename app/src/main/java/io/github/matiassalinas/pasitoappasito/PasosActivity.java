@@ -4,19 +4,17 @@ package io.github.matiassalinas.pasitoappasito;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
-
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,7 +27,6 @@ import org.w3c.dom.NodeList;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -57,14 +54,17 @@ public class PasosActivity extends AppCompatActivity {
         firstPage = false;
         idActividad = (int) getIntent().getExtras().get("ID");
         if(getPasos("actividades.xml")){
-            Log.d("OK","OKK "+ pasos.size());
+            /*
             for(int i=0;i<pasos.size();i++){
                 Log.d("Paso",pasos.get(i).getTexto());
             }
+            */
         }
+        //ActionBar
+        String titulo = (String) getIntent().getExtras().get("Nombre");
+        setTitle(titulo);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Log.d("PASOS", String.valueOf(pasos.size()));
-        //Log.d("actividad", String.valueOf(actividad.getPasos().size()));
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -73,6 +73,7 @@ public class PasosActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        //Al cambiar paso
         mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(final int position) {
@@ -85,18 +86,21 @@ public class PasosActivity extends AppCompatActivity {
         soundButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("CLIIICK","CLIIICK");
                 setSound(posActual,getBaseContext());
             }
         });
 
+    }
 
-
-
-
-
-
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public boolean getPasos(String xml){
@@ -151,7 +155,6 @@ public class PasosActivity extends AppCompatActivity {
     }
 
     public static void setSound(int pos, Context context){
-        Log.d("PLAYERSOUND", String.valueOf(player));
         if(player!=null){
             player.release();
             player = null;
@@ -159,7 +162,6 @@ public class PasosActivity extends AppCompatActivity {
         player = new MediaPlayer();
         try {
             AssetFileDescriptor afd = pasos.get(pos).getSonido(context);
-            Log.d("POS", String.valueOf(pos));
             player.setDataSource(afd.getFileDescriptor(),afd.getStartOffset(),afd.getLength());
             player.prepare();
             player.start();
@@ -215,15 +217,6 @@ public class PasosActivity extends AppCompatActivity {
             return rootView;
         }
 
-        @Override
-        public void setUserVisibleHint(boolean isVisibleToUser) {
-            super.setUserVisibleHint(isVisibleToUser);
-            if (isVisibleToUser) {
-                Log.d("HOLAA","HOLAA");
-            }
-            else {
-            }
-        }
     }
 
 
